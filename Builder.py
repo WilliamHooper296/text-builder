@@ -93,7 +93,7 @@ class Builder:
 
     def _nextWord(self, input: tuple, backing: dict):
         if input not in backing:
-            return nextWord(random.choice(list(backing.keys())))
+            input = random.choice(list(backing.keys()))
         
         options = backing.get(input)
 
